@@ -1,0 +1,31 @@
+package Week7Homework;
+
+
+public class Pro11Divided11 {
+
+  /*Write a java program to print the numbers between 1 to 100
+    which can be divided by 3  and 5 separately.
+*/
+    public void Divide() {
+        System.out.println("Divided by 3:");
+        for (int i = 1; i < 100; i++) { // for loop used here
+            if (i % 3 == 0)
+                System.out.print(i + ",");
+        }
+        System.out.println("\n");
+        System.out.println("Divided by 5:");
+        for (int i = 1; i < 100; i++) {
+            if (i % 5 == 0)
+                System.out.print(i + ",");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Pro11Divided11 obj = new Pro11Divided11();
+        obj.Divide();
+
+    }
+}
+
+
